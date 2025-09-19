@@ -13,7 +13,7 @@ class NavigationView extends GetView<NavigationController> {
     HomeScreenView(),
     ExploreScreenView(),
     ActivityScreenView(),
-    Center(child: Text("Profile Page")),
+    Center(child: Text("Profile Page",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),)),
   ];
 
   @override
