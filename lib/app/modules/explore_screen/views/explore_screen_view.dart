@@ -182,7 +182,6 @@ class ExploreScreenView extends GetView<ExploreScreenController> {
                         ),
                       ),
                       16.w(context).getWidthBox(context),
-
                       ChallengeCard(
                         title: "Sprint\nChallenge",
                         iconPath: AppAssets.sprint_challenge,
@@ -193,7 +192,6 @@ class ExploreScreenView extends GetView<ExploreScreenController> {
                         ),
                       ),
                       16.w(context).getWidthBox(context),
-
                       ChallengeCard(
                         title: "Squat\nChallenge",
                         iconPath: AppAssets.squat_challenge,

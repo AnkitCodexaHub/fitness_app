@@ -16,7 +16,6 @@ class OnboardingScreenView extends GetView<OnboardingScreenController> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-
             SizedBox(
               height: 565.h(context),
               width: 396.w(context),
@@ -51,9 +50,7 @@ class OnboardingScreenView extends GetView<OnboardingScreenController> {
                 ],
               ),
             ),
-
             20.h(context).getHeightBox(context),
-
             RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
@@ -92,9 +89,7 @@ class OnboardingScreenView extends GetView<OnboardingScreenController> {
                 ],
               ),
             ),
-
             20.h(context).getHeightBox(context),
-
             Text(
               'There is no instant way to a healthy life',
               textAlign: TextAlign.center,
@@ -103,9 +98,7 @@ class OnboardingScreenView extends GetView<OnboardingScreenController> {
                 color: AppColors.primaryDark.withOpacity(0.5),
               ),
             ),
-
             30.h(context).getHeightBox(context),
-
             SizedBox(
               width: 65.w(context),
               height: 5.h(context),
@@ -117,15 +110,14 @@ class OnboardingScreenView extends GetView<OnboardingScreenController> {
                     return LinearProgressIndicator(
                       value: controller.progressController.value,
                       backgroundColor: AppColors.primaryDark,
-                      valueColor: const AlwaysStoppedAnimation(AppColors.primaryLight),
+                      valueColor:
+                          const AlwaysStoppedAnimation(AppColors.primaryLight),
                     );
                   },
                 ),
               ),
             ),
-
             45.h(context).getHeightBox(context),
-
             InkWell(
               onTap: controller.goToNavigation,
               child: Container(
@@ -141,7 +133,7 @@ class OnboardingScreenView extends GetView<OnboardingScreenController> {
                     textAlign: TextAlign.center,
                     style: AppTextStyles.bold(
                       fontSize: 16.sp(context),
-                      color: AppColors.White,
+                      color: AppColors.white,
                     ),
                   ),
                 ),

@@ -67,12 +67,11 @@ class WorkoutCard extends StatelessWidget {
                 //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-
                   Text(
                     title,
                     style: AppTextStyles.bold(
                       fontSize: 24.sp(context),
-                      color: AppColors.White,
+                      color: AppColors.white,
                     ),
                   ),
                   14.h(context).getHeightBox(context),

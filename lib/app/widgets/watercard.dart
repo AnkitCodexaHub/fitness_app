@@ -89,14 +89,17 @@ class WaterCard extends StatelessWidget {
                       alignment: Alignment.bottomCenter,
                       child: FractionallySizedBox(
                         heightFactor: progress,
-                        widthFactor: 1.0,
+                        widthFactor: 1,
                         child: ClipRect(
                           child: Stack(
                             children: [
                               /// First wave
                               ShaderMask(
                                 shaderCallback: (rect) => const LinearGradient(
-                                  colors: [Color(0xFF8CC6DB), Color(0xFF8CC6DB)],
+                                  colors: [
+                                    Color(0xFF8CC6DB),
+                                    Color(0xFF8CC6DB)
+                                  ],
                                 ).createShader(rect),
                                 blendMode: BlendMode.srcIn,
                                 child: SizedBox(
@@ -108,7 +111,10 @@ class WaterCard extends StatelessWidget {
                               /// Second wave
                               ShaderMask(
                                 shaderCallback: (rect) => const LinearGradient(
-                                  colors: [Color(0xFF8CC6DB), Color(0xFF8CC6DB)],
+                                  colors: [
+                                    Color(0xFF8CC6DB),
+                                    Color(0xFF8CC6DB)
+                                  ],
                                 ).createShader(rect),
                                 blendMode: BlendMode.srcIn,
                                 child: SizedBox(

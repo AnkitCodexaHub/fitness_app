@@ -7,9 +7,9 @@ class ProgressBar extends StatelessWidget {
   final double value; // percentage (0-100)
 
   const ProgressBar({
-    Key? key,
+    super.key,
     required this.value,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

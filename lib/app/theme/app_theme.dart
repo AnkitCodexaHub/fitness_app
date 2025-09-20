@@ -17,7 +17,6 @@ class AppTheme {
       bodyLarge: AppTextStyles.medium(fontSize: 16),
       bodyMedium: AppTextStyles.regular(fontSize: 14),
       bodySmall: AppTextStyles.regular(fontSize: 12),
-
     ),
   );
 }

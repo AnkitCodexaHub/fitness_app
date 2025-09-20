@@ -1,6 +1,5 @@
 /// Central place to store all asset paths
 class AppAssets {
-
   // Images
   static const String logo = "assets/images/logo.png";
   static const String overlay = "assets/images/Overlay.png";
@@ -43,5 +42,4 @@ class AppAssets {
 
   // Svg Image
   static const String sleep_image = "assets/images/sleep_img.svg";
-
 }

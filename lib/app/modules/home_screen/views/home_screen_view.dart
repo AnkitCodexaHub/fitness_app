@@ -59,6 +59,7 @@ class HomeScreenView extends GetView<HomeScreenController> {
                   height: 48.h(context),
                   width: 350.w(context),
                   child: TextFormField(
+                    textAlignVertical: TextAlignVertical.center,
                     decoration: InputDecoration(
                       hintText: "Search",
                       hintStyle: AppTextStyles.regular(
@@ -78,7 +79,7 @@ class HomeScreenView extends GetView<HomeScreenController> {
                         vertical: 14.h(context),
                       ),
                       filled: true,
-                      fillColor: AppColors.White,
+                      fillColor: AppColors.white,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12.w(context)),
                         borderSide: const BorderSide(color: Colors.white),

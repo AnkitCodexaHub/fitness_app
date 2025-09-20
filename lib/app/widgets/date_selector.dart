@@ -2,7 +2,7 @@ import 'package:fitness_app/app/theme/app_colors.dart';
 import 'package:fitness_app/app/theme/app_text_styles.dart';
 import 'package:fitness_app/app/utils/responsive_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart'; // ✅ for DateFormat
+import 'package:intl/intl.dart';
 
 class DateSelector extends StatefulWidget {
   const DateSelector({super.key});
@@ -24,16 +24,20 @@ class _DateSelectorState extends State<DateSelector> {
   void _generateCurrentWeek() {
     DateTime now = DateTime.now();
 
-    // 👇 Sunday as start of week
+    // Sunday as start of week
     int weekday = now.weekday; // 1=Mon, 7=Sun
     DateTime startOfWeek = now.subtract(Duration(days: weekday % 7));
 
     // Generate 7 days
-    weekDates = List.generate(7, (index) => startOfWeek.add(Duration(days: index)));
+    weekDates =
+        List.generate(7, (index) => startOfWeek.add(Duration(days: index)));
 
     // auto select today's date
     selectedIndex = weekDates.indexWhere(
-          (date) => date.day == now.day && date.month == now.month && date.year == now.year,
+      (date) =>
+          date.day == now.day &&
+          date.month == now.month &&
+          date.year == now.year,
     );
   }
 

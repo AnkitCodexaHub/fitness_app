@@ -9,10 +9,10 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import '../../../theme/app_assets.dart';
 import '../../../widgets/roundedcircularprogress.dart';
-import '../controllers/activity_screen_controller.dart';
+import '../controllers/analytics_screen_controller.dart';
 
-class ActivityScreenView extends GetView<ActivityScreenController> {
-  const ActivityScreenView({Key? key}) : super(key: key);
+class AnalyticsScreenView extends GetView<AnalyticsScreenController> {
+  const AnalyticsScreenView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +79,8 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                               width: 112.w(context),
                               decoration: BoxDecoration(
                                 color: const Color(0xFFFAFBF9),
-                                borderRadius: BorderRadius.circular(12.w(context)),
+                                borderRadius:
+                                    BorderRadius.circular(12.w(context)),
                                 border: Border.all(
                                   color: AppColors.primaryDark.withOpacity(0.1),
                                   width: 1.w(context),
@@ -97,7 +98,8 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                                       'Active calories',
                                       style: AppTextStyles.medium(
                                         fontSize: 13.sp(context),
-                                        color: AppColors.primaryDark.withOpacity(0.5),
+                                        color: AppColors.primaryDark
+                                            .withOpacity(0.5),
                                       ),
                                     ),
                                     6.h(context).getHeightBox(context),
@@ -120,7 +122,8 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                               height: 132.h(context),
                               width: 112.w(context),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12.w(context)),
+                                borderRadius:
+                                    BorderRadius.circular(12.w(context)),
                                 color: const Color(0xffEAECFF),
                               ),
                               child: Column(
@@ -178,7 +181,8 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                                       width: 28.w(context),
                                       decoration: BoxDecoration(
                                         color: const Color(0xFFFAFBF9),
-                                        borderRadius: BorderRadius.circular(3.w(context)),
+                                        borderRadius:
+                                            BorderRadius.circular(3.w(context)),
                                       ),
                                       child: Center(
                                         child: SvgPicture.asset(
@@ -209,8 +213,10 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                                   height: 146.h(context),
                                   width: 197.w(context),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(7.w(context)),
-                                    child: Image.asset(AppAssets.map, fit: BoxFit.cover),
+                                    borderRadius:
+                                        BorderRadius.circular(7.w(context)),
+                                    child: Image.asset(AppAssets.map,
+                                        fit: BoxFit.cover),
                                   ),
                                 ),
                               ),
@@ -247,7 +253,8 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                                       width: 28.w(context),
                                       decoration: BoxDecoration(
                                         color: const Color(0xFFF9B9B9),
-                                        borderRadius: BorderRadius.circular(3.w(context)),
+                                        borderRadius:
+                                            BorderRadius.circular(3.w(context)),
                                       ),
                                       child: Center(
                                         child: SvgPicture.asset(
@@ -278,7 +285,8 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                                   height: 91.h(context),
                                   width: 175.w(context),
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(7.w(context)),
+                                    borderRadius:
+                                        BorderRadius.circular(7.w(context)),
                                     color: Colors.white,
                                   ),
                                   child: Stack(
@@ -329,7 +337,8 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                               height: 100.h(context),
                               width: 135.w(context),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12.w(context)),
+                                borderRadius:
+                                    BorderRadius.circular(12.w(context)),
                                 color: const Color(0xFFFFE8C6),
                               ),
                               child: Column(
@@ -346,14 +355,16 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                                           width: 28.w(context),
                                           decoration: BoxDecoration(
                                             color: const Color(0xFFF8D39D),
-                                            borderRadius: BorderRadius.circular(3.w(context)),
+                                            borderRadius: BorderRadius.circular(
+                                                3.w(context)),
                                           ),
                                           child: Center(
                                             child: SvgPicture.asset(
                                               AppAssets.steps,
                                               height: 20.h(context),
                                               width: 20.w(context),
-                                              colorFilter: const ColorFilter.mode(
+                                              colorFilter:
+                                                  const ColorFilter.mode(
                                                 Color(0xFF865A19),
                                                 BlendMode.srcIn,
                                               ),
@@ -389,12 +400,16 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                                       vertical: 0,
                                     ),
                                     child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(20.w(context)),
+                                      borderRadius:
+                                          BorderRadius.circular(20.w(context)),
                                       child: LinearProgressIndicator(
                                         value: 999 / 2000,
                                         minHeight: 12.h(context),
-                                        backgroundColor: const Color(0xFFFFEDD1),
-                                        valueColor: const AlwaysStoppedAnimation(Color(0xFFFCC46F)),
+                                        backgroundColor:
+                                            const Color(0xFFFFEDD1),
+                                        valueColor:
+                                            const AlwaysStoppedAnimation(
+                                                Color(0xFFFCC46F)),
                                       ),
                                     ),
                                   ),
@@ -409,7 +424,8 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                               height: 51.h(context),
                               width: 135.w(context),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12.w(context)),
+                                borderRadius:
+                                    BorderRadius.circular(12.w(context)),
                                 color: const Color(0xFFF6CFCF),
                               ),
                               child: Center(
@@ -454,7 +470,8 @@ class ActivityScreenView extends GetView<ActivityScreenController> {
                                       width: 28.w(context),
                                       decoration: BoxDecoration(
                                         color: const Color(0xFFD6BBF8),
-                                        borderRadius: BorderRadius.circular(3.w(context)),
+                                        borderRadius:
+                                            BorderRadius.circular(3.w(context)),
                                       ),
                                       child: Center(
                                         child: SvgPicture.asset(

@@ -68,9 +68,10 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
 
                     /// Gradient overlay
                     Positioned(
+                      top: 116,
                       child: Container(
                         width: 350.w(context),
-                        height: 250.h(context),
+                        height: 134.h(context),
                         decoration: BoxDecoration(
                           gradient: const LinearGradient(
                             colors: [Color(0x001D1D1D), Color(0xFF686868)],
@@ -94,26 +95,26 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                         width: 258.w(context),
                         height: 64.h(context),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15.w(context)),
-                          color: AppColors.primaryDark.withOpacity(0.3),
-                          border: Border.all(
-                            width: 0.5.w(context),
-                            color: Colors.white.withValues(alpha: 0.25),
-                          )
-                          // border: GradientBoxBorder(
-                          //   gradient: const LinearGradient(
-                          //     colors: [
-                          //       Color(0xFFBBF246),
-                          //       Color(0x03BBF246),
-                          //       Color(0x00BBF246),
-                          //       Color(0x03BBF246),
-                          //       Color(0xFFBBF246),
-                          //     ],
-                          //     stops: [0.0, 0.41, 0.47, 0.54, 1.0],
-                          //   ),
-                          //   width: 0.5.w(context),
-                          // ),
-                        ),
+                            borderRadius: BorderRadius.circular(15.w(context)),
+                            color: AppColors.primaryDark.withOpacity(0.3),
+                            border: Border.all(
+                              width: 0.5.w(context),
+                              color: Colors.white.withValues(alpha: 0.25),
+                            )
+                            // border: GradientBoxBorder(
+                            //   gradient: const LinearGradient(
+                            //     colors: [
+                            //       Color(0xFFBBF246),
+                            //       Color(0x03BBF246),
+                            //       Color(0x00BBF246),
+                            //       Color(0x03BBF246),
+                            //       Color(0xFFBBF246),
+                            //     ],
+                            //     stops: [0.0, 0.41, 0.47, 0.54, 1.0],
+                            //   ),
+                            //   width: 0.5.w(context),
+                            // ),
+                            ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
@@ -128,7 +129,8 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                                     height: 32.h(context),
                                     width: 32.w(context),
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(5.w(context)),
+                                      borderRadius:
+                                          BorderRadius.circular(5.w(context)),
                                       color: const Color(0xFFBBF246),
                                     ),
                                     child: Center(
@@ -141,7 +143,8 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                                   ),
                                   8.w(context).getWidthBox(context),
                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Stack(
@@ -150,19 +153,24 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                                           Text(
                                             'Time',
                                             style: AppTextStyles.poppinsRegular(
-                                              fontSize: 10.sp(context), // Adjust the font size as needed
+                                              fontSize: 10.sp(
+                                                  context), // Adjust the font size as needed
                                               foreground: Paint()
                                                 ..style = PaintingStyle.stroke
-                                                ..strokeWidth = 2.5 // Adjust the stroke width for the 'glow'
-                                                ..color = Colors.white.withValues(alpha: 0.25),
+                                                ..strokeWidth =
+                                                    2.5 // Adjust the stroke width for the 'glow'
+                                                ..color = Colors.white
+                                                    .withValues(alpha: 0.25),
                                             ),
                                           ),
                                           // The solid, semi-transparent text on top
                                           Text(
                                             'Time',
                                             style: AppTextStyles.poppinsRegular(
-                                              fontSize: 10.sp(context), // Must match the size of the text below
-                                              color: Colors.white, // The core color of the text
+                                              fontSize: 10.sp(
+                                                  context), // Must match the size of the text below
+                                              color: Colors
+                                                  .white, // The core color of the text
                                             ),
                                           ),
                                         ],
@@ -173,19 +181,24 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                                           Text(
                                             '20 min',
                                             style: AppTextStyles.poppinsMedium(
-                                              fontSize: 12.sp(context), // Adjust the font size as needed
+                                              fontSize: 12.sp(
+                                                  context), // Adjust the font size as needed
                                               foreground: Paint()
                                                 ..style = PaintingStyle.stroke
-                                                ..strokeWidth = 2.5 // Adjust the stroke width for the 'glow'
-                                                ..color = Colors.white.withValues(alpha: 0.25),
+                                                ..strokeWidth =
+                                                    2.5 // Adjust the stroke width for the 'glow'
+                                                ..color = Colors.white
+                                                    .withValues(alpha: 0.25),
                                             ),
                                           ),
                                           // The solid, semi-transparent text on top
                                           Text(
                                             '20 min',
                                             style: AppTextStyles.poppinsMedium(
-                                              fontSize: 12.sp(context), // Must match the size of the text below
-                                              color: const Color(0xFFBBF246), // The core color of the text
+                                              fontSize: 12.sp(
+                                                  context), // Must match the size of the text below
+                                              color: const Color(
+                                                  0xFFBBF246), // The core color of the text
                                             ),
                                           ),
                                         ],
@@ -214,7 +227,8 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                                     height: 32.h(context),
                                     width: 32.w(context),
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(5.w(context)),
+                                      borderRadius:
+                                          BorderRadius.circular(5.w(context)),
                                       color: const Color(0xFFBBF246),
                                     ),
                                     child: Center(
@@ -227,7 +241,8 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                                   ),
                                   8.w(context).getWidthBox(context),
                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Stack(
@@ -236,19 +251,24 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                                           Text(
                                             'Burn',
                                             style: AppTextStyles.poppinsRegular(
-                                              fontSize: 10.sp(context), // Adjust the font size as needed
+                                              fontSize: 10.sp(
+                                                  context), // Adjust the font size as needed
                                               foreground: Paint()
                                                 ..style = PaintingStyle.stroke
-                                                ..strokeWidth = 2.5 // Adjust the stroke width for the 'glow'
-                                                ..color = Colors.white.withValues(alpha: 0.25),
+                                                ..strokeWidth =
+                                                    2.5 // Adjust the stroke width for the 'glow'
+                                                ..color = Colors.white
+                                                    .withValues(alpha: 0.25),
                                             ),
                                           ),
                                           // The solid, semi-transparent text on top
                                           Text(
                                             'Burn',
                                             style: AppTextStyles.poppinsRegular(
-                                              fontSize: 10.sp(context), // Must match the size of the text below
-                                              color: Colors.white, // The core color of the text
+                                              fontSize: 10.sp(
+                                                  context), // Must match the size of the text below
+                                              color: Colors
+                                                  .white, // The core color of the text
                                             ),
                                           ),
                                         ],
@@ -259,19 +279,24 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                                           Text(
                                             '95 kcal',
                                             style: AppTextStyles.poppinsMedium(
-                                              fontSize: 12.sp(context), // Adjust the font size as needed
+                                              fontSize: 12.sp(
+                                                  context), // Adjust the font size as needed
                                               foreground: Paint()
                                                 ..style = PaintingStyle.stroke
-                                                ..strokeWidth = 2.5 // Adjust the stroke width for the 'glow'
-                                                ..color = Colors.white.withValues(alpha: 0.25),
+                                                ..strokeWidth =
+                                                    2.5 // Adjust the stroke width for the 'glow'
+                                                ..color = Colors.white
+                                                    .withValues(alpha: 0.25),
                                             ),
                                           ),
                                           // The solid, semi-transparent text on top
                                           Text(
                                             '95 kcal',
                                             style: AppTextStyles.poppinsMedium(
-                                              fontSize: 12.sp(context), // Must match the size of the text below
-                                              color: const Color(0xFFBBF246), // The core color of the text
+                                              fontSize: 12.sp(
+                                                  context), // Must match the size of the text below
+                                              color: const Color(
+                                                  0xFFBBF246), // The core color of the text
                                             ),
                                           ),
                                         ],
@@ -374,7 +399,6 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                       ],
                     ),
                     16.h(context).getHeightBox(context),
-
                     RoundCard(
                       title: 'Jumping Jacks',
                       subtitle: '00:30',
@@ -382,7 +406,6 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                       onTap: () {},
                     ),
                     SizedBox(height: 16.h(context)),
-
                     RoundCard(
                       title: 'Squats',
                       subtitle: '01:00',
@@ -390,7 +413,6 @@ class WorkoutScreenView extends GetView<WorkoutScreenController> {
                       onTap: () {},
                     ),
                     SizedBox(height: 16.h(context)),
-
                     RoundCard(
                       title: 'Backward Lunge',
                       subtitle: '00:30',

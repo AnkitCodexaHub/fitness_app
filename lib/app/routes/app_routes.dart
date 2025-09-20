@@ -9,6 +9,7 @@ abstract class Routes {
   static const EXPLORE_SCREEN = _Paths.EXPLORE_SCREEN;
   static const ACTIVITY_SCREEN = _Paths.ACTIVITY_SCREEN;
   static const WORKOUT_SCREEN = _Paths.WORKOUT_SCREEN;
+  static const PROFILE_SCREEN = _Paths.PROFILE_SCREEN;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const EXPLORE_SCREEN = '/explore-screen';
   static const ACTIVITY_SCREEN = '/activity-screen';
   static const WORKOUT_SCREEN = '/workout-screen';
+  static const PROFILE_SCREEN = '/profile-screen';
 }

@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class ActivityScreenController extends GetxController {
+class AnalyticsScreenController extends GetxController {
   //TODO: Implement ActivityScreenController
 
   final count = 0.obs;
